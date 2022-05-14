@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/FakeShoppingApp/static/css/main.31d6cfe0.css",
+    "main.js": "/FakeShoppingApp/static/js/main.a5d76769.js",
+    "index.html": "/FakeShoppingApp/index.html",
+    "main.a5d76769.js.map": "/FakeShoppingApp/static/js/main.a5d76769.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.a5d76769.js"
+  ]
+}
