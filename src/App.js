@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path="/" element={<ProductList />} />
+          <Route path="*" element={<ProductList />} />
           <Route path="/product/:productId" element={<ProductDetails />} />
           <Route> 404 Not Found!</Route>
         </Routes>
