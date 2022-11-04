@@ -4,7 +4,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import {
   selectedProduct,
-  removeSelectetProduct,
+  removeSelectedProduct,
 } from "../Redux/Actions/Product-actions";
 
 const ProductDetails = () => {
@@ -26,7 +26,7 @@ const ProductDetails = () => {
   useEffect(() => {
     if (productId && productId !== "") fetchProductDetails();
     return () => {
-      dispatch(removeSelectetProduct());
+      dispatch(removeSelectedProduct());
     };
   }, [productId]);
 
@@ -40,12 +40,14 @@ const ProductDetails = () => {
             <div className="ui vertical divider">AND</div>
             <div className="middle aligned row">
               <div className="column lp">
-                <img className="ui fluid image" src={image} />
+                <img className="ui fluid image" src={image} alt="images" />
               </div>
               <div className="column rp">
                 <h1>{title}</h1>
                 <h2>
-                  <a className="ui teal tag label">${price}</a>
+                  <a className="ui teal tag label" href="#/">
+                    ${price}
+                  </a>
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
