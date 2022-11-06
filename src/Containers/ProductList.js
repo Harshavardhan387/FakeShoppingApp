@@ -19,10 +19,10 @@ const ProductList = () => {
 
   useEffect(() => {
     fetchProducts();
-  },[]);
+  }, []);
   console.log("Products: ", products);
   return (
-    <div className="ui grid container">
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
       <ProductComponents />
     </div>
   );
